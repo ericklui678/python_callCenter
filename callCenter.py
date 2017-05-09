@@ -59,12 +59,12 @@ class CallCenter(object):
                 sorted = True
         return self
 
-call1 = Call("Bob", 4086661520, 1700, "complaint")
-call2 = Call("Jeff", 4086663905, 110, "daily update")
-call3 = Call("Kevin", 123123123, 1200, "security concerns")
+call1 = Call("Bob", 2342342345, 1700, "complaint")
+call2 = Call("Jeff", 3453453456, 110, "daily update")
+call3 = Call("Kevin", 1231231234, 1200, "security concerns")
 
 main = CallCenter()
 main.addCall(call1).addCall(call2).addCall(call3).info()
 
 main.sort().info()
-main.removeByNum(4086661520).info()
+main.removeByNum(2342342345).info()
